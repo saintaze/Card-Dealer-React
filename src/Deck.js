@@ -55,7 +55,7 @@ class Deck extends Component {
       <div className="Deck">
         <h1>♦ card dealer ♦</h1>
         <h2>♦ a fun way to deal cards ♦</h2>
-        <h3>{this.state.cardsRemaining === 45 && 'All cards have been dealt! '}</h3>
+        <h3>{this.state.cardsRemaining === 0 && 'All cards have been dealt! '}</h3>
         <button onClick={this.handldeClick}>deal me a card</button>
         <div className="cards">
           {this.renderCards()}
